@@ -2,6 +2,7 @@ import { classifyCsv, getSinglePageArr } from './utils/classify-csv';
 import { readCsvIntoArr } from './utils/read-csv-into-arr';
 import { classifyByType } from './utils/classify-by-type';
 import { calcEachHrefEven } from './utils/calc-each-href-even';
+import { assembleJsonIntoXlsx } from './utils/assemble-json-into-xlsx';
 
 console.time('analyse');
 
@@ -21,5 +22,7 @@ while (classifiedCsvArr.length > 0) {
 
 	calcEachHrefEven(toBeAnalyse, singlePageName);
 }
+
+assembleJsonIntoXlsx();
 
 console.timeEnd('analyse'); // analyse: 1:12.711 (m:ss.mmm) 500M 的 CSV 数据

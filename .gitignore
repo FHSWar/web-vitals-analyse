@@ -1,5 +1,9 @@
 .DS_Store
 node_modules
+src/bak-csv
+src/output-json
+src/output-xlsx
+src/source-csv
 
 # Log files
 *.log

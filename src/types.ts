@@ -38,3 +38,8 @@ export interface SameRouteByWebVitalsType {
         [key in WebVitalsType]: Array<number>
     }
 }
+
+// 相同格式的json整合进同一个xlsx
+export const JSON_TO_XLSX = {
+	各类型均值: '按href各类型均值.xlsx'
+} as const;
